@@ -76,8 +76,9 @@
 #include <platform/string.h>
 #include <platform/compat.h>
 
-extern int __sysctl(int *name, u_int namelen, void *oldp, size_t *oldlenp,
-                    void *newp, size_t newlen);
+extern int __sysctl(int *name, u_int namelen,
+				void *oldp, size_t *oldlenp,
+				void *newp, size_t newlen);
 extern void __exit(int) __attribute__((noreturn));
 extern int __pthread_kill(mach_port_t, int);
 
